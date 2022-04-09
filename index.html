@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Что бы мне поделать</title>
+</head>
+<body>
+    <div class ="main">
+        <div class="result">
+            <div class="done">
+                <p>Сделано </p>
+                <p id="done_num">12</p>
+            </div>
+            <div class="canceled">
+                <p>Отменено </p>
+                <p id="canceled_num">15</p>
+            </div>
+        </div>
+        <div class="form_container">
+            <form action="">
+                <label for="">Добавить новое дело</label>
+                <input type="text" placeholder="Название" name="name" autocomplete="on">
+                <input type="text" placeholder="Пометки" name="note" autocomplete="on">
+                <button>добавить</button>
+            </form>
+        </div>
+
+        <div id="task_holder">
+
+        </div>
+    </div>
+
+    <script src="script/script.js" type="text/javascript"></script>
+</body>
+</html>

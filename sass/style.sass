@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap")
+*
+    margin: 0
+    padding: 0
+    font-family: Inter
+body
+    background-color: #e5e5e5
+    font-size: 20px
+    line-height: 24px
+    .main
+        width: 428px
+        margin: 0 auto
+        background-color: white
+        .result
+            width: 100%
+            display: flex
+            color: white
+            position: sticky
+            top: 0
+            & > div
+                width: 50%
+                height: 49px
+                display: flex
+                justify-content: center
+                align-items: center
+                p
+                    margin-left: 5px
+            .done
+                background-color: #27AE60
+            .canceled
+                background-color: #E74C3C
+        form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: white
+            label
+                margin: 9px auto
+            input
+                width: 65%
+                margin-bottom: 9px
+                border: 1px solid black
+                padding: 8px 15px
+                font-size: 20px
+                line-height: 24px
+                box-sizing: border-box
+            button
+                font-size: 20px
+                line-height: 24px
+                color: #f39c12
+                border: 3px solid #f39c12
+                padding: 7px 91px
+                margin-bottom: 34px
+                background-color: white
+                cursor: pointer
+
+@import "task"

@@ -1,0 +1,46 @@
+#task_holder > img
+    text-align: center
+    width: 215px
+    height: 234px
+    margin-left: 106px
+.task
+    display: grid
+    grid-template-columns: 369px 59px
+    color: white
+    .task_info
+        background-color: #34495e
+        margin-bottom: 14px
+        & > p
+            display: flex
+            justify-content: start
+            align-items: center
+            height: 59px
+            padding: 14px 18px
+            box-sizing: border-box
+        .task_note
+            font-size: 18px
+            font-style: italic
+    .task_checked
+        .done
+            background-image: url("../media/done_mark.png")
+            background-position: center
+            background-repeat: no-repeat
+            height: 59px
+            border: 2px solid #27ae60
+            box-sizing: border-box
+            cursor: pointer
+        .d_active
+            background-color: #27ae60
+        .canceled
+            background-image: url("../media/canceled_mark.png")
+            background-position: center
+            background-repeat: no-repeat
+            height: 59px
+            border: 2px solid #e74c3c
+            box-sizing: border-box
+            cursor: pointer
+        .c_active
+            background-color:  #e74c3c
+
+
+    

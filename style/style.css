@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-size: 20px;
+  line-height: 24px;
+}
+body .main {
+  width: 428px;
+  margin: 0 auto;
+  background-color: white;
+}
+body .main .result {
+  width: 100%;
+  display: flex;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+body .main .result > div {
+  width: 50%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main .result > div p {
+  margin-left: 5px;
+}
+body .main .result .done {
+  background-color: #27AE60;
+}
+body .main .result .canceled {
+  background-color: #E74C3C;
+}
+body .main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+body .main form label {
+  margin: 9px auto;
+}
+body .main form input {
+  width: 65%;
+  margin-bottom: 9px;
+  border: 1px solid black;
+  padding: 8px 15px;
+  font-size: 20px;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+body .main form button {
+  font-size: 20px;
+  line-height: 24px;
+  color: #f39c12;
+  border: 3px solid #f39c12;
+  padding: 7px 91px;
+  margin-bottom: 34px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#task_holder > img {
+  text-align: center;
+  width: 215px;
+  height: 234px;
+  margin-left: 106px;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 369px 59px;
+  color: white;
+}
+.task .task_info {
+  background-color: #34495e;
+  margin-bottom: 14px;
+}
+.task .task_info > p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 59px;
+  padding: 14px 18px;
+  box-sizing: border-box;
+}
+.task .task_info .task_note {
+  font-size: 18px;
+  font-style: italic;
+}
+.task .task_checked .done {
+  background-image: url("../media/done_mark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 59px;
+  border: 2px solid #27ae60;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.task .task_checked .d_active {
+  background-color: #27ae60;
+}
+.task .task_checked .canceled {
+  background-image: url("../media/canceled_mark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 59px;
+  border: 2px solid #e74c3c;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.task .task_checked .c_active {
+  background-color: #e74c3c;
+}
+
+/*# sourceMappingURL=style.css.map */
