@@ -22,7 +22,7 @@ document.forms[0].addEventListener("submit", event => {
     const name = event.target.name.value;
     const note = event.target.note.value;
 
-    if (event.target.name.value =="" || event.target.note.value == ""){
+    if (event.target.name.value =="" && event.target.note.value == ""){
         alert("Заполните хотя бы одно поле");
     } else {
         taskList.push({name, note});
@@ -108,6 +108,7 @@ function render(list){
         });
     });
     tdefault();
+
 }
 
 render(taskList);
@@ -115,22 +116,20 @@ render(taskList);
 function taskCalc(list){
     let d = 0;
     let c = 0;
+    if(list.length > 0){
     list.forEach(elem => {
         if (elem.status === true) {
             d++;
         } else if (elem.status === false) {
             c++;
-        } else if (list.length === 0) { //не помогло обнулить счетчик при удалении последнего task
-            d = 0; 
-            c = 0;
-        }
-        doneChecked.innerText = d;
-        canceledChecked.innerText = c;
-
-        writeDone(d);
-        writeCanceled(c);
+        } 
     });
- 
+    }
+    doneChecked.innerText = d;
+    canceledChecked.innerText = c;
+
+    writeDone(d);
+    writeCanceled(c);
 }
 
 function tdefault(){
